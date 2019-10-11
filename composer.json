@@ -1,0 +1,22 @@
+{
+    "name": "neznajki/json-rpc-authorization",
+    "description": "authorization for json rpc",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maris Locmelis",
+            "email": "neznajki@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "JsonRpcAuthorizationBundle\\": "src"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "symfony/security": "^4.3",
+        "symfony/dependency-injection": "^4.3"
+    }
+}

@@ -1,0 +1,22 @@
+services:
+    _defaults:
+        autowire: true
+
+    JsonRpcAuthorizationBundle\Service\AuthenticationService: ~
+
+    JsonRpcAuthorizationBundle\Contract\CredentialsReceiverInterface:
+        class: JsonRpcAuthorizationBundle\Service\DefaultCredentialsReceiverService
+
+
+    JsonRpcAuthorizationBundle\Service\HelperService:
+        class: JsonRpcAuthorizationBundle\Service\HelperService
+
+    JsonRpcAuthorizationBundle\Service\DefaultCredentialsCheckerService:
+        class: ~
+        arguments:
+            - '%server.json.rpc.user.name%'
+            - '%server.json.rpc.user.password%'
+
+    JsonRpcAuthorizationBundle\Service\DefaultPasswordEncryptService: ~
+
+    JsonRpcAuthorizationBundle\Service\DefaultUserProviderService: ~
