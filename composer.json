@@ -1,7 +1,7 @@
 {
     "name": "neznajki/json-rpc-authorization",
     "description": "authorization for json rpc",
-    "type": "composer-plugin",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
