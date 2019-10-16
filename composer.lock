@@ -4,8 +4,34 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d49e6f2e19511e4b65248b24f706ad7",
+    "content-hash": "af814231bdd61644131a9cb19176dee3",
     "packages": [
+        {
+            "name": "neznajki/json-rpc-server-contracts",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:Neznajki/json-rpc-server-contracts.git",
+                "reference": "92ae383bdffecbca044d149aa8d4d750180b7d6c"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JsonRpcServerContracts\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maris Locmelis",
+                    "email": "neznajki@gmail.com"
+                }
+            ],
+            "description": "Storing common contracts for json rpc server",
+            "time": "2019-10-16T16:48:17+00:00"
+        },
         {
             "name": "psr/container",
             "version": "1.0.0",

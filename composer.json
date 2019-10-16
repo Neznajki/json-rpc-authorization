@@ -17,6 +17,13 @@
     "minimum-stability": "stable",
     "require": {
         "symfony/security": "^4.3",
-        "symfony/dependency-injection": "^4.3"
+        "symfony/dependency-injection": "^4.3",
+        "neznajki/json-rpc-server-contracts": "^1.0"
+    },
+    "repositories": {
+        "contracts": {
+            "type": "git",
+            "url": "git@github.com:Neznajki/json-rpc-server-contracts.git"
+        }
     }
 }

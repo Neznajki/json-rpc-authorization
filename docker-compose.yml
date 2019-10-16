@@ -20,7 +20,8 @@ services:
         environment:
             - VIRTUAL_HOST=json-rpc-authorization.local
             - HTTPS_METHOD=noredirect
-            - APACHE_DOCUMENT_ROOT=/www/default/public/
+            - APACHE_DOCUMENT_ROOT=/www/default
+            - HOME=$HOME
 
 networks:
     default:

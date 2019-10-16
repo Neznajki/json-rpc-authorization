@@ -4,9 +4,11 @@
 namespace JsonRpcAuthorizationBundle\Exception;
 
 
+use Exception;
+use JsonRpcServerContracts\Contract\JsonRpcException;
 use Throwable;
 
-class AuthNotGrantedException extends ServerErrorException
+class AuthNotGrantedException extends Exception implements JsonRpcException
 {
     const EXCEPTION_CODE = -32099;
 
@@ -14,7 +16,6 @@ class AuthNotGrantedException extends ServerErrorException
      * AuthNotGrantedException constructor.
      * @param string $message
      * @param Throwable|null $previous
-     * @throws InternalErrorException
      */
     public function __construct($message = "", Throwable $previous = null)
     {
