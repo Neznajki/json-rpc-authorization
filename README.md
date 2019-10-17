@@ -2,7 +2,7 @@
 makes authorization for json rpc
 
 # bundle installation
-* composer install 
+* composer require neznajki/json-rpc-authorization
 * services.yaml
 ```yaml
 imports:
