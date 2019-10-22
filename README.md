@@ -14,3 +14,10 @@ imports:
 imports:
     { resource: '@JsonRpcAuthBundle/Resources/config/security.yaml' }
 ```
+* parameters.yaml
+```yaml
+pareameters:
+    server.json.rpc.user.name: authorization
+    server.json.rpc.user.password: qwerty
+
+```

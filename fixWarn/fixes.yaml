@@ -1,0 +1,3 @@
+parameters:
+    server.json.rpc.user.name: authorization
+    server.json.rpc.user.password: qwerty
