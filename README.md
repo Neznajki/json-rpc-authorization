@@ -8,8 +8,8 @@ makes authorization for json rpc
 imports:
     - { resource: '@JsonRpcAuthBundle/Resources/config/services.yaml' }
 
-* security.yaml
 ```
+* security.yaml
 ```yaml
 imports:
     { resource: '@JsonRpcAuthBundle/Resources/config/security.yaml' }
