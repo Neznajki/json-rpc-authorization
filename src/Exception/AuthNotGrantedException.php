@@ -5,7 +5,7 @@ namespace JsonRpcAuthorizationBundle\Exception;
 
 
 use Exception;
-use JsonRpcServerContracts\Contract\JsonRpcException;
+use JsonRpcServerCommon\Contract\JsonRpcException;
 use Throwable;
 
 class AuthNotGrantedException extends Exception implements JsonRpcException

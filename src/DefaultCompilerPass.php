@@ -5,9 +5,9 @@ namespace JsonRpcAuthorizationBundle;
 
 
 use JsonRpcAuthorizationBundle\Contract\CredentialsCheckerInterface;
-use JsonRpcAuthorizationBundle\Contract\PasswordEncryptInterface;
+use JsonRpcServerCommon\Contract\PasswordEncryptInterface;
 use JsonRpcAuthorizationBundle\Service\DefaultCredentialsCheckerService;
-use JsonRpcAuthorizationBundle\Service\DefaultPasswordEncryptService;
+use JsonRpcServerCommon\Service\DefaultPasswordEncryptService;
 use RuntimeException;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

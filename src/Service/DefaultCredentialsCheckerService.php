@@ -6,7 +6,7 @@ namespace JsonRpcAuthorizationBundle\Service;
 
 use JsonRpcAuthorizationBundle\Contract\CredentialsCheckerInterface;
 use JsonRpcAuthorizationBundle\Contract\CredentialsInterface;
-use JsonRpcAuthorizationBundle\Contract\PasswordEncryptInterface;
+use JsonRpcServerCommon\Contract\PasswordEncryptInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 class DefaultCredentialsCheckerService implements CredentialsCheckerInterface

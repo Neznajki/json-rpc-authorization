@@ -12,11 +12,10 @@ services:
         class: JsonRpcAuthorizationBundle\Service\HelperService
 
     JsonRpcAuthorizationBundle\Service\DefaultCredentialsCheckerService:
-        class: ~
         arguments:
             - '%server.json.rpc.user.name%'
             - '%server.json.rpc.user.password%'
 
-    JsonRpcAuthorizationBundle\Service\DefaultPasswordEncryptService: ~
+    JsonRpcServerCommon\Service\DefaultPasswordEncryptService: ~
 
     JsonRpcAuthorizationBundle\Service\DefaultUserProviderService: ~

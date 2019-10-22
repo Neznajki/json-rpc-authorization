@@ -8,7 +8,6 @@ use JsonRpcAuthorizationBundle\Contract\CredentialsCheckerInterface;
 use JsonRpcAuthorizationBundle\Contract\CredentialsInterface;
 use JsonRpcAuthorizationBundle\Contract\CredentialsReceiverInterface;
 use JsonRpcAuthorizationBundle\Exception\AuthNotGrantedException;
-use JsonRpcAuthorizationBundle\Exception\InternalErrorException;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
@@ -69,7 +68,6 @@ class AuthenticationService extends AbstractGuardAuthenticator
      *
      * @return void
      * @throws AuthNotGrantedException
-     * @throws InternalErrorException
      */
     public function start(Request $request, AuthenticationException $authException = null)
     {
@@ -166,7 +164,6 @@ class AuthenticationService extends AbstractGuardAuthenticator
      * @param AuthenticationException $exception
      * @return void
      * @throws AuthNotGrantedException
-     * @throws InternalErrorException
      */
     public function onAuthenticationFailure(Request $request, AuthenticationException $exception)
     {
