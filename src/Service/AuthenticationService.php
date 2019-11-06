@@ -167,7 +167,7 @@ class AuthenticationService extends AbstractGuardAuthenticator
      */
     public function onAuthenticationFailure(Request $request, AuthenticationException $exception)
     {
-        throw new AuthNotGrantedException('access denied');
+        throw new AuthNotGrantedException(sprintf('access denied %s', $exception->getMessage()));
     }
 
     /**
